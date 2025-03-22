@@ -6,16 +6,15 @@ import CohortDetailsModal from "./SideBarModal";
 import dummyCohortss from "finovators/dummy responses/generate-cohorts.json";
 import { useRequest } from "finovators/commons/hooks/useRequest";
 
-
-
 export default function CohortsPage() {
     const { data } = useRequest(
         {
             url: "/generate-cohort",
-            method: "GET",
+            method: "POST",
         },
         { manual: false }
     );
+
 
     const cohorts = (data || dummyCohortss).cohorts.reduce(
         (acc, curr, index) => {
@@ -24,7 +23,7 @@ export default function CohortsPage() {
         []
     );
 
-    console.log(" cohorts:", cohorts);
+
     return (
         <div className={styles.container}>
             <h1 className={styles.title}>Cohorts</h1>
@@ -39,7 +38,10 @@ export default function CohortsPage() {
 
 function CohortCard({ cohort }) {
     const [openModal, setOpenModal] = useState(false);
-    console.log(" openModal:", openModal);
+
+
+
+
 
     const {
         AgeGroup,
