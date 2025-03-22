@@ -2,7 +2,7 @@ import axios from "axios";
 import qs from "qs";
 
 const request = axios.create({
-  baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+  baseURL: 'http://localhost:8000',
   paramsSerializer: (params) =>
     qs.stringify(params, { arrayFormat: "brackets" }),
 });

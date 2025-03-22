@@ -1,0 +1,54 @@
+
+
+{
+    "cohorts": [
+        {
+            "CohortName": "hardcoded High-income, travel-oriented individuals",
+            "AgeGroup": "25-34",
+            "Locations": [
+                "New York"
+            ],
+            "IncomeLevel": "High",
+            "SpendingCategory": [
+                "Dining",
+                "Travel"
+            ],
+            "AvgMonthlySpend": 2500,
+            "PastRewardsRedeemed": [
+                "Cashback",
+                "TravelMiles"
+            ]
+        },
+        {
+            "CohortName": "hardcoded Family-oriented, moderate-income individuals",
+            "AgeGroup": "35-44",
+            "Locations": [
+                "San Francisco"
+            ],
+            "IncomeLevel": "Medium",
+            "SpendingCategory": [
+                "Groceries",
+                "Fuel"
+            ],
+            "AvgMonthlySpend": 1500,
+            "PastRewardsRedeemed": [
+                "Discounts"
+            ]
+        },
+        {
+            "CohortName": "hardcoded Young, entertainment-focused individuals",
+            "AgeGroup": "18-24",
+            "Locations": [
+                "Chicago"
+            ],
+            "IncomeLevel": "Low",
+            "SpendingCategory": [
+                "Entertainment"
+            ],
+            "AvgMonthlySpend": 800,
+            "PastRewardsRedeemed": [
+                "GiftCards"
+            ]
+        }
+    ]
+}

@@ -1,0 +1,122 @@
+.container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	height: 100vh;
+	background: #f8f9fa;
+	padding: 20px;
+}
+
+.title {
+	font-size: 24px;
+	margin-bottom: 20px;
+	color: #333;
+}
+
+.fileList {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+	width: 100%;
+	max-width: 400px;
+}
+
+.fileInput {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	background: white;
+	padding: 10px 15px;
+	border: 2px solid #007bff;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+	border: 1px dotted #bdbdbd;
+}
+
+.upload_icon_container{
+	display: flex;
+	align-items: center;
+	gap: 10px;
+}
+.fileInput:hover {
+	background: #e9f2ff;
+}
+
+.fileInput input {
+	display: none;
+}
+
+.fileLabel {
+	font-size: 16px;
+	color: #007bff;
+	cursor: pointer;
+}
+
+.fileName {
+	font-size: 14px;
+	color: #333;
+	font-weight: 500;
+}
+
+.uploadButton {
+	margin-top: 20px;
+	padding: 12px 20px;
+	font-size: 16px;
+	border-radius: 8px;
+	border: none;
+	background: #007bff;
+	color: white;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+.uploadButton:disabled {
+	background: #ccc;
+	cursor: not-allowed;
+}
+
+.uploadButton:hover:not(:disabled) {
+	background: #0056b3;
+}
+
+/* Progress Bar Styles */
+.progressBarContainer {
+	width: 100%;
+	max-width: 400px;
+	height: 20px;
+	background: #ddd;
+	border-radius: 10px;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.progressBar {
+	height: 100%;
+	background: #28a745;
+	text-align: center;
+	line-height: 20px;
+	color: white;
+	font-weight: bold;
+	transition: width 0.5s ease-in-out;
+}
+
+
+.upload_icon {
+	width: 24px;
+	height: 24px;
+}
+
+.file_upload_label{
+	font-size: 16px;
+	color: #007bff;
+	cursor: pointer;
+}
+
+.edit_button{
+	font-size: 16px;
+	color: #007bff;
+	cursor: pointer;
+}
+

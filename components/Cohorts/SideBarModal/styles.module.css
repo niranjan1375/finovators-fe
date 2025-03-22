@@ -1,0 +1,54 @@
+.modalOverlay {
+	position: fixed;
+	top: 0;
+	right: 0;
+	width: 400px;
+	height: 100vh;
+	background: white;
+	box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+	transition: transform 0.3s ease-in-out;
+	transform: translateX(100%);
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.modalOverlay.open {
+	transform: translateX(0);
+}
+
+.modalTitle {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.detailsTable {
+	width: 100%;
+	border-collapse: collapse;
+}
+
+.detailsTable th, .detailsTable td {
+	padding: 10px;
+	border-bottom: 1px solid #ddd;
+	text-align: left;
+}
+
+.detailsTable tr:hover {
+	background: #f1f1f1;
+	cursor: pointer;
+}
+
+.closeButton {
+	margin-top: 20px;
+	padding: 10px;
+	width: 100%;
+	background: #007bff;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+}
+
+.closeButton:hover {
+	background: #0056b3;
+}
