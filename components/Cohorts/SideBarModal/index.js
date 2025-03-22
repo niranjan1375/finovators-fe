@@ -16,7 +16,7 @@ const CohortDetailsModal = ({ open, cohort, onClose }) => {
         },
         { manual: true }
     );
-console.log('lol',lol);
+    console.log("lol", lol);
 
     useEffect(() => {
         if (cohort.CohortName) {

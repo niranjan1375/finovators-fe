@@ -2,10 +2,12 @@
 	width: 100%;
 	text-align: end;
 	padding: 15px 15px 15px 0;
-	background-color: #f8f9fa;
+	background-color: #F9AE64;
+
 	color: #333;
 	font-size: 14px;
 	position: fixed;
 	bottom: 0;
 	left: 0;
+	overflow: hidden;
 }
