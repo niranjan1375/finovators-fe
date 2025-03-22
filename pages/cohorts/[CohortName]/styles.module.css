@@ -1,0 +1,70 @@
+.campaign_container {
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.customer_profile {
+  background: #000;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.customer_profile h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.customer_profile p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.campaign_list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.campaign_card {
+  background: #000;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1;
+  min-width: 300px;
+}
+
+.campaign_card h2 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.campaign_card h3 {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 10px;
+}
+
+.campaign_card p {
+  font-size: 14px;
+  margin-bottom: 8px;
+}
+
+.key_features {
+  background: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.key_features h4 {
+  margin-bottom: 5px;
+  font-size: 16px;
+  color: #fff;
+}
+
+.key_features p {
+  font-size: 13px;
+  margin: 3px 0;
+}

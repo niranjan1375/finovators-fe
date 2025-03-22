@@ -5,6 +5,7 @@ import styles from "./cohorts.module.css";
 import CohortDetailsModal from "./SideBarModal";
 import dummyCohortss from "finovators/dummy responses/generate-cohorts.json";
 import { useRequest } from "finovators/commons/hooks/useRequest";
+import { useRouter } from "next/router";
 
 export default function CohortsPage() {
     const { data } = useRequest(
@@ -41,7 +42,7 @@ function CohortCard({ cohort }) {
 
 
 
-
+    const router = useRouter();
 
     const {
         AgeGroup,
@@ -93,7 +94,7 @@ function CohortCard({ cohort }) {
                         <button
                             className={styles.viewButton}
                             onClick={() => {
-                                setOpenModal((p) => !p);
+                                router.push(`/cohorts/${CohortName}`);
                             }}
                         >
                             View Full Cohort
